@@ -80,7 +80,7 @@
     "jquery-ujs": "^1.2.2",
     "jquery.caret": "^0.3.1",
     "jquery.scrollto": "^2.1.2",
-    "js-cookie": "^2.2.1",
+    "js-cookie": "^3.0.1",
     "js-yaml": "^3.13.1",
     "keymirror": "^0.1.1",
     "memoizee": "^0.4.14",
