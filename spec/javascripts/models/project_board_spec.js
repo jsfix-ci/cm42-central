@@ -12,8 +12,8 @@ describe('ProjectBoard model', function() {
     project = new Project({
       id: 1337, title: 'Test project', point_values: [0, 1, 2, 3],
       last_changeset_id: null, iteration_start_day: 1, iteration_length: 1,
-      default_flow: Cookies.get('current_flow'),
-      current_flow: Cookies.get('current_flow')
+      default_flow: JSON.parse(Cookies.get('current_flow')),
+      current_flow: JSON.parse(Cookies.get('current_flow'))
     });
 
     projectBoard = new ProjectBoard({project: project});

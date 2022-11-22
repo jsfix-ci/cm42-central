@@ -10,7 +10,7 @@ var $cookiesBanner = $(".cookies-banner");
 var $cookiesBannerBtn = $cookiesBanner.find(".cookies-banner__btn");
 
 window.onload = function() {
-  var isCookiesAllowed = Cookies.get('allow_cookies') === 'allowed';
+  var isCookiesAllowed = JSON.parse(Cookies.get('allow_cookies')) === 'allowed';
 
   if (!isCookiesAllowed) {
     $($cookiesBanner).addClass('cookies-banner--visible');
